@@ -1,0 +1,60 @@
+=== DEPENDENT PACKAGES ===
+
+{
+    name,
+    main purpose,
+    explication
+}
+
+1. Nhóm Dữ liệu và Tiện ích
+{
+    axios,
+    HTTP Client,
+    Thư viện phổ biến nhất để thực hiện các yêu cầu HTTP (GET, POST, PUT, DELETE) từ Frontend đến Backend. Nó dễ dàng hơn fetch API gốc của trình duyệt.
+}
+{
+    immer,
+    Quản lý trạng thái bất biến,
+    Một thư viện nhỏ gọn giúp làm việc với dữ liệu bất biến (immutable data) dễ dàng hơn, Đặc biệt hữu ích khi cập nhật các trạng thái phức tạp trong Redux, Zustand hoặc thậm chí useState mà không lo lắng về việc thay đổi trạng thái trực tiếp mutaion.
+}
+{
+    zod,
+    Xác thực và tạo Scheme,
+    Thư viện khai báo scheme (lược đồ) mạnh mẽ, giúp bạn định nghĩa cấu trúc dữ liệu mong muốn (ví dụ: dữ liệu form, dữ liệu API Response). Nó được dùng để xác thực dữ liệu một cách an toàn phía Frontend.
+}
+{
+    lodash,
+    Bộ công cụ tiện ích,
+    Cung cấp hàng trăm hàm tiện ích để xử lý mảng, đối tượng, chuỗi, và một số cách hiệu quả và đáng tin cậy. Ví dụ: _.debounce, _.throttle, _.get, _.map.
+}
+
+2. Nhóm Quản lí trạng thái và Gọi API
+{
+    @tanstack/react-query,
+    Quản lý trạng thái Sever (Data Fetching),
+    Đây là công cụ hàng đầu hiện nay để quản lý dữ liệu từ Server (thay vì trạng thái giao diện người dùng). Nó xử lý các vấn đề phức tạp như caching (bộ nhớ đệm), đồng bộ hóa dữ liệu (synchronization), gọi lại (retry), tải nền (backgroud fetching), và quản lý trạng thái tải/lỗi/thành công.
+}
+
+3. Nhóm Quản lý form
+{
+    react-hook-form,
+    Quản lý Form,
+    Thư viện hiệu suất cao để xây dựng và quản lý các biểu mẫu (forms) phức tạp trong React. Nó cung cấp các Hook để xử lý việc đăng ký trường, xác thực (thường kết hợp với zod), và quản lý trạng thái form mà không cần render lại quá mức
+}
+
+4. Nhóm công cụ kiểm thử chính
+{
+    jest,
+    Test Runner chính,
+    Công cụ cốt lỗi để thực thi, chạy và quản lý các bài kiểm thử của bạn. Nó cung cấp giao diện dòng lệnh, thu thập code coverage (độ bao phủ code), và cấu trúc tổng thể cho việc kiểm thử,
+}
+{
+    ts-jest,
+    Bộ chuyển đổi (Transformer) TS sang JS,
+    Vì Jest chỉ hiểu code JavaScript, gói này hoạt động như một bộ chuyển đổi. Nó cho phép Jest xử lý các file TypeScript (.ts, .tsx) bằng cách biên dịch chúng thành JavaScript trước khi Jest thực thi bài kiểm thử
+}
+{
+    jest-enviroment-jsdom,
+    Môi trường DOM giả lập,
+    Đây là môi trường kiểm thử mặc định của Jest. Nó giả lập môi trường trình duyệt (Browser Enviroment), cung cấp các đối tượng toàn cục như window, document, và navigator cho Node.js. Rất cần thiết cho việc kiểm thử các component React/Frontend của bạn
+}
